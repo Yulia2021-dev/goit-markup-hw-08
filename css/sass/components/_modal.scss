@@ -1,0 +1,77 @@
+.backdrop {
+  @include modal-frame(fixed, 0, 0, 100%, 100%);
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: visibility $animation-time cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  @include modal-frame(absolute, 50%, 50%, 528px, 581px);
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-color:var(--main-bg-color);
+  padding: 40px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+  }
+}
+
+.modal-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--round-box);
+  background: var(--main-bg-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:focus > .modal-icon-close, &:hover > .modal-icon-close  {
+    fill:var(--accent-color);
+    @include smooth-transition;
+  }
+}
+
+.modal-icon-close {
+  transform: translate(-1px, 2px);
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  .modal {
+    transform: translateX( 100%, 100%) scale (0.2);
+  }
+}
+
+.modal__button-send {
+  display: block;
+  margin: 30px auto 0;
+  width: 200px;
+  padding: 10px 55px;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--main-bg-color);
+  background: #188CE8;
+  cursor: pointer;
+
+  &:hover, &:focus  {
+    outline: none;
+    box-shadow: 0 5px 5px rgba(60, 134, 168, 0.25);
+    @include smooth-transition;
+  }
+}
+
+

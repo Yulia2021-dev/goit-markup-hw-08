@@ -1,0 +1,18 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.grid a {
+  text-decoration: none;
+}
+
+.grid__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.grid__item:hover .card-overlay-text {
+  transform: translateY(0);
+  transition: var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+}

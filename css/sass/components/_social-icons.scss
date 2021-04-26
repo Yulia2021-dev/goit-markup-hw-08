@@ -1,0 +1,29 @@
+.social-icons {
+  width: 210px;
+}
+.social-icons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+.social-icons__link:hover .icon, .social-icons__link:focus .icon {
+  fill: var(--main-bg-color);
+}
+.social-icons__link:hover,
+.social-icons__link:focus {
+  background-color: var(--accent-color);
+  transition: var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-icons__item {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-icons .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icons-text-color);
+  transition: var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+}

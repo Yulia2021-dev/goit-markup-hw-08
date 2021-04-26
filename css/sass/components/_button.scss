@@ -1,0 +1,23 @@
+.button {
+  font-weight: 700;
+  font-size: var(--base-size);
+  line-height: 1.87;
+  letter-spacing: .06em;
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  border-radius: var(--small-circled);
+  padding: 10px 32px;
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  transition: var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(49, 106, 230, 0.7);
+}
+.button:active {
+  outline: none;
+  transform: translateY(2px);
+}

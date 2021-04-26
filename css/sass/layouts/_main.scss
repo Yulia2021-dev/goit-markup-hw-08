@@ -1,0 +1,49 @@
+
+
+.features, .works, .our-team, .regular-customers {
+  padding: 95px 0;
+}
+
+.works {
+  padding-top: 0;
+}
+
+.navigation {
+  height: 80px;
+  padding: 25px 0;
+}
+
+.main-section {
+  padding-top: 95px;
+  padding-bottom: 90px;
+}
+
+.secondary-nav {
+  margin-bottom: 50px;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+
+  .button {
+    display: block;
+  }
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 10px;
+  background-repeat: 4px;
+}
+
+.section-heading__portfolio {
+  display: none;
+}
+
+.portfolio {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: .06em;
+  color: var(--main-text-color);
+}

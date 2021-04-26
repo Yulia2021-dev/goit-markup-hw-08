@@ -1,0 +1,62 @@
+/* Link related styles */
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  @include smooth-transition;
+
+  &:hover, &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contacts {
+  display: inline-flex;
+  margin-left: 275px;
+}
+
+.contacts__link {
+  font-size: 14px;
+  color: var(--secondary-color);
+
+  .icon {
+    fill: var(--secondary-color);
+    margin-right: 10px;
+    @include smooth-transition;
+  }
+}
+
+.contacts__link:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__link:hover, .contacts__link:focus {
+  color: var(--accent-color);
+}
+
+.contacts__link:hover .icon, .contacts__link:focus .icon {
+  fill: var(--accent-color);
+}
+
+.contacts__item {
+  display: inline;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contract-link {
+  color: var(--accent-color);
+}
+
+.contract-link:focus {
+  @include smooth-transition;
+}
+
+#contract {
+  margin-left: 14px;
+}
+
+
