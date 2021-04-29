@@ -1,3 +1,5 @@
+@import "mixins";
+
 .backdrop {
   @include modal-frame(fixed, 0, 0, 100%, 100%);
   background: rgba(0, 0, 0, 0.2);

@@ -4,7 +4,7 @@
   text-decoration: none;
   color: inherit;
   font-weight: 500;
-  @include smooth-transition;
+  transition: $animation-time cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover, &:focus {
     color: var(--accent-color);
@@ -23,7 +23,7 @@
   .icon {
     fill: var(--secondary-color);
     margin-right: 10px;
-    @include smooth-transition;
+    transition: $animation-time cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -52,7 +52,7 @@
 }
 
 .contract-link:focus {
-  @include smooth-transition;
+  transition: $animation-time cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #contract {
