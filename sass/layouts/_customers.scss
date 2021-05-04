@@ -3,6 +3,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .customers__link {
   border: 1px solid #afb1b8;
   width: 170px;
@@ -26,4 +27,27 @@
 }
 .customers__link:focus {
   outline-color: var(--accent-color); 
+}
+
+.customers__list {
+  display: inline-block;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+   width:calc(50% - 60px / 2);
+   margin-bottom: 30px;
+  }
+}
+.customers__list {
+  @media screen and (min-width: 768px) {
+    width: calc(50% - 90px / 3);
+   margin-bottom: 30px;
+  }
+
+  .customers__list {
+    @media screen and (min-width: 1200px) {
+      width: calc(100% - 180px / 6);
+    //  margin-bottom: 30px;
+    }
+  }
 }

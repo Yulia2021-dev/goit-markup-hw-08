@@ -1,7 +1,19 @@
-
+.works {
+  @media screen and (max-width: 1119px) {
+    display:none;
+  }
+}
 .works__way {
   position: relative;
 }
+
+.works__item {
+
+  &:not(:last-child){
+    margin-right: 30px;
+  } 
+}
+
 .works__title {
   font-family: var(--main-font-family);
   font-weight: 700;
@@ -12,9 +24,10 @@
   text-transform: uppercase;
   color: var(--main-bg-color);
   }
+
 .works__text {
   position: absolute;
-  width: 370px;
+  width: 100%;
   bottom: 0;
   background: rgba(47, 48, 58, 0.8);
 }

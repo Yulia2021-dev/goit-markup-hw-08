@@ -89,16 +89,9 @@ address {
 }
 
 .container {
-  max-width: 1200px;
-  min-width: 320px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-@media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-  }
 }
 
 @media screen and (min-width: 480px) {
@@ -113,12 +106,6 @@ address {
   }
 }
 
-@media screen and (min-width: 992px) {
-  .container {
-    width: 992px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -129,17 +116,8 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-@media screen and (min-width: 1200px) {
-  .flex-container {
-    width: 1170px;
-  }
 }
 
 .flex-c {
@@ -200,6 +178,12 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 767.98px) {
+  .menu-nav {
+    display: none;
+  }
 }
 
 .menu-nav__link {
@@ -455,6 +439,12 @@ address {
   margin-left: 275px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .contacts {
+    display: none;
+  }
+}
+
 .contacts__link {
   font-size: 14px;
   color: var(--secondary-color);
@@ -682,7 +672,7 @@ address {
   line-height: 1.36;
   color: var(--main-bg-color);
   display: block;
-  width: 700px;
+  width: 100%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -690,45 +680,7 @@ address {
 }
 
 .features__item {
-  -ms-flex-preferred-size: calc(50% - 30px);
-      flex-basis: calc(50% - 30px);
-  height: 250px;
-  margin: 15px;
-}
-
-@media screen and (min-width: 480px) {
-  .features__item {
-    -ms-flex-preferred-size: calc(100% - 30px);
-        flex-basis: calc(100% - 30px);
-  }
-  .features__item:first-child {
-    margin: 15px;
-  }
-  .features__item:last-child {
-    margin: 15px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .features__item {
-    -ms-flex-preferred-size: calc(25% - 30px);
-        flex-basis: calc(25% - 30px);
-  }
-  .features__item:first-child {
-    margin: 15px;
-  }
-  .features__item:last-child {
-    margin: 15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features__item:first-child {
-    margin-left: 0;
-  }
-  .features__item:last-child {
-    margin-right: 0;
-  }
+  width: calc((100% - 30 * 4) / 4);
 }
 
 .features__title {
@@ -754,8 +706,18 @@ address {
   border-radius: var(--small-circled);
 }
 
+@media screen and (max-width: 1119px) {
+  .works {
+    display: none;
+  }
+}
+
 .works__way {
   position: relative;
+}
+
+.works__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .works__title {
@@ -771,7 +733,7 @@ address {
 
 .works__text {
   position: absolute;
-  width: 370px;
+  width: 100%;
   bottom: 0;
   background: rgba(47, 48, 58, 0.8);
 }
@@ -797,10 +759,28 @@ address {
   line-height: 1.2;
   text-align: center;
   color: var(--main-text-color);
-  width: 270px;
+  -ms-flex-preferred-size: calc((100% - 90px) / 4);
+      flex-basis: calc((100% - 90px) / 4);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .team__card {
+    width: calc(100% - 30px);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .team__card .team__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.team__card:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team__body {
@@ -856,6 +836,31 @@ address {
 
 .customers__link:focus {
   outline-color: var(--accent-color);
+}
+
+.customers__list {
+  display: inline-block;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .customers__list {
+    width: calc(50% - 60px / 2);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers__list {
+    width: calc(50% - 90px / 3);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers__list .customers__list {
+    width: calc(100% - 180px / 6);
+  }
 }
 
 .contacts__logo {
