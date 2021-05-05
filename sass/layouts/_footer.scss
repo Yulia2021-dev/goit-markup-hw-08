@@ -35,7 +35,7 @@
 }
 
 .subscription {
-  flex-basis: calc(50% - 15px);
+  flex-basis: calc(49% - 15px);
 
   &__text {
     font-size: inherit;
@@ -49,10 +49,11 @@
 
   &__form {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__input {
-    width: 360px;
+    min-width: 280px;
     height: 50px;
     color: var(--main-bg-color);
     padding: 15px;

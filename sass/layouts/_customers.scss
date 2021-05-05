@@ -31,8 +31,13 @@
 
 .customers__list {
    display: inline-flex;
-   width: 100%;
+   flex-basis: calc(100% / 6 - 30px);
+   
+   &:not(:last-child) {
+     margin-right: 30px;
+  }
 }
+
 
 //   @media screen and (min-width: 480px) {
 //    width:calc(50% - 60px / 2);

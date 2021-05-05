@@ -1,4 +1,8 @@
 .mobile-menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -14,12 +18,11 @@
 }
 
 
-
-// @media screen and (min-width:767.98) {
-//   .mobile-menu-btn {
-//     display:none;
-//   } 
-// }
+@media screen and (min-width:767.98) {
+  .mobile-menu-btn {
+    display:none;
+  } 
+}
 // .mobile-overlay {
   
 //   width: 100%;
@@ -28,21 +31,19 @@
  
 // }
 
-.mobile-overlay {
+// .mobile-overlay {
 
-  @media screen and (min-width: 767.98px) {
-    display: none;
-  }
-}
+//   @media screen and (min-width: 767.98px) {
+//     display: none;
+//   }
+// }
 
 .mobile-menu {
-  position: fixed;
-  top: 0;
-  right:0;
+  position: absolute;
+  top: 70px;
+  right: 0;
   width: 100%;
-  height: 100vh;
-  padding: 50px 300px 40px 40px ;
-  max-width: 480px;
+  padding: 8px 40px 16px;
   background-color: #fff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
@@ -51,15 +52,17 @@
   }
 }
 
-.mobile-menu .menu-nav__item {
-  
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
+.mobile-menu .menu-nav__link {
+  font-weight: 500;
 font-size: 40px;
 line-height: 47px;
 letter-spacing: 0.02em;
 color: #212121;
+margin-bottom: 30px;
+}
+
+.mobile-menu .menu-nav__link.active {
+  color: var(--accent-color);
 }
 
 .mobile-menu .contacts {
