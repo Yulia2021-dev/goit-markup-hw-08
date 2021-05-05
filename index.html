@@ -53,7 +53,10 @@
             </ul>
           </div>
         </nav>
-        <button class="mobile-menu-btn">
+        <div class="munu-mobile">
+          
+        </div>
+        <button class="mobile-menu-btn" data-menu-button>
           <svg class="mobile-menu-icon">
             <use class="icon-menu" href="./images/icons/sprite.svg#icon-mobile"></use>
             <use class="icon-close-mobile" href="./images/icons/sprite.svg#icon-close-mobile"></use>
@@ -62,7 +65,7 @@
       </div>
     </header>
   <div class="mobile-overlay">
-    <div class="mobile-menu">
+    <div class="mobile-menu" data-menu>
       <ul class=" list">
         <li class="menu-nav__item">
           <a class="link menu-nav__link " href="index.html">Студия</a></li>
@@ -104,7 +107,7 @@
       <!-- Features -->
       <section class="features">
         <div class="container">
-          <ul class="list flex-container flex-c">
+          <ul class="list flex-container flex-c features-section">
             <li class="features__item">
               <div class="features__block">
               <svg class="icon" width="70" height="70">
@@ -662,6 +665,7 @@
           </form> 
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
