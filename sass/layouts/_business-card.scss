@@ -1,5 +1,5 @@
 .business-card {
-  width: 370px;
+  max-width: 370px;
   margin-bottom: 30px;
   border: 1px solid #eee;
   @include smooth-transition;

@@ -18,8 +18,8 @@
   </head>
   <body>
     <!-- Шапка -->
-    <header class="navigation">
-      <div class="container">
+     <header class="navigation">
+      <div class="container main-nav">
         <nav>
           <a class="link logo" href="index.html">
             <span class="logo__highlight">Web</span>Studio
@@ -32,7 +32,8 @@
             </li>
             <li class="menu-nav__item"><a class="link menu-nav__link" href="#">Контакты</a></li>
           </ul>
-          <div class="contacts">
+          <!-- <button class="menu-open">0</button> -->
+          <!-- <div class="contacts">
             <ul class="list">
               <li class="contacts__item">
                 <a class="link contacts__link" href="mailto:info@devstudio.com">
@@ -51,26 +52,36 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="hamburger">
+          </div> -->
+          <!-- <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </div>
-        </nav>
-        <!-- <div class="menu-mobile">
-          
-        </div>
-        <button class="mobile-menu-btn" data-menu-button>
-          <svg class="mobile-menu-icon">
-            <use class="icon-menu" width="18" height="18" href="./images/icons/sprite.svg#icon-mobile"></use>
-            <use class="icon-close-mobile" width="18" height="18" href="./images/icons/sprite.svg#icon-close-mobile"></use>
-          </svg>
-        </button> -->
+        </div> -->
+        </nav> 
       </div>
-    </header>
-  <!-- <div class="mobile-overlay"> -->
-    <div class="mobile-menu" data-menu>
+      <!-- <div class="menu">
+        <ul class=" menu__list list">
+          <li><a class="menu__link" href="">Студия</a></li>
+          <li><a class="menu__link" href="">Портфолио</a></li>
+          <li><a class="menu__link" href="">Контакты</a></li>
+        </ul>
+        <div class="menu-bottom">
+          <ul class="menu-contacts">
+            <li><a class="" href="">+38 096 111 11 11</a></li>
+            <li><a class="" href="">info@devstudio.com</a></li>
+          </ul>
+          <ul class="menu-networks">
+            <li><a class="" href="">Instagram</a></li>
+            <li><a class="" href="">Twitter</a></li>
+            <li><a class="" href="">Facebook</a></li>
+            <li><a class="" href="">LinkedIn</a></li>
+          </ul>
+        </div>
+        
+      </div> -->
+    </header> 
+    <!-- <div class="mobile-menu" data-menu>
       <ul class=" list">
         <li class="menu-nav__item">
           <a class="link menu-nav__link active" href="index.html">Студия</a></li>
@@ -99,7 +110,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
   <!-- </div>
     <!-- Main -->
     <main>
@@ -112,10 +123,10 @@
       <!-- Features -->
       <section class="features">
         <div class="container">
-          <ul class="list flex-container flex-c features-section">
+          <ul class="list features__list">
             <li class="features__item">
               <div class="features__block">
-              <svg class="icon" width="70" height="70">
+              <svg class="icon icon-c" width="70" height="70">
                 <use href="./images/icons/sprite.svg#icon-antenna"></use>
               </svg>
             </div>
@@ -189,10 +200,10 @@
           </ul>
         </div>
       </section> 
-      <section class="team">
+       <section class="team">
         <div class="container">
           <h2 class="section-heading">Наша команда</h2>
-          <ul class="list flex-container">
+          <ul class="list team__list">
             <li class="team__card">
               <img src="./images/photo1.jpg" alt="Игорь Демьяненко" />
               <div class="team__body">
@@ -456,14 +467,14 @@
           </ul>
         </div>
       </section>
-      <section class="customers">
-        <div class="container flex-container flex-c">
+       <section class="customers">
+        <div class="container">
           <h2 class="section-heading">Постоянные клиенты</h2>
-          <ul class="list flex-container">
-            <li class="customers__list">
+          <ul class="list customer__list">
+            <li class="customer__item">
               <a
                 href=""
-                class="customers__link"
+                class="customer__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -472,10 +483,10 @@
                 </svg>
               </a>
             </li>
-            <li class="customers__list">
+            <li class="customer__item">
               <a
                 href=""
-                class="customers__link"
+                class="customer__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -484,10 +495,10 @@
                 </svg>
               </a>
             </li>
-            <li class="customers__list">
+            <li class="customer__item">
               <a
                 href=""
-                class="customers__link"
+                class="customer__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -496,10 +507,10 @@
                 </svg>
               </a>
             </li>
-            <li class="customers__list">
+            <li class="customer__item">
               <a
                 href=""
-                class="customers__link"
+                class="customer__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -508,10 +519,10 @@
                 </svg>
               </a>
             </li>
-            <li class="customers__list">
+            <li class="customer__item">
               <a
                 href=""
-                class="customers__link"
+                class="customer__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -520,10 +531,10 @@
                 </svg>
               </a>
             </li>
-            <li class="customers__list">
+            <li class="customer__item">
               <a
                 href=""
-                class="customers__link"
+                class="customer__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -536,10 +547,12 @@
 
         </div>
       </section>
-    </main>
+    </main> 
     <!-- Подвал -->
-    <footer class="footer">
-      <div class="container flex-container">
+     <footer class="footer">
+       
+      <div class="container">
+        <div class="footer__blocks">
           <div class="contacts__logo">
             <a class="link logo" href="index.html">
               <span class="logo__highlight">Web</span>Studio
@@ -611,7 +624,7 @@
               </li>
             </ul>
           </div>
-           <div class="subscription">
+            <div class="subscription">
             <h3 class="subscription__text">Подпишитесь на рассылку</h3>
             <form class="subscription__form">
             <input class="subscription__input" type="text" name="email" placeholder="E-mail">
@@ -623,6 +636,7 @@
           </div>
             </form>
           </div> 
+        </div>
       </div>
     </footer>
     <!-- <img src="./images/svg/satellite-dish.svg" alt="icon" /> -->

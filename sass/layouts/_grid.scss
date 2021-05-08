@@ -1,12 +1,28 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
+  width: calc((100% - 90px) / 3);
+
+  // @media screen and (max-width: 767.98px) {
+  //   width:calc((50% - 60px / 2));
+  // }
 }
+
 
 .grid a {
   text-decoration: none;
 }
+
+// .grid__item {
+//   display: flex;  
+//   flex-wrap: wrap;
+//   width: calc((100% - 90px) / 3);
+
+//   @media screen and (max-width: 767.98px) {
+//     width:calc((50% - 60px / 2));
+//   }
+// }
 
 .grid__item:nth-child(3n) {
   margin-right: 0;

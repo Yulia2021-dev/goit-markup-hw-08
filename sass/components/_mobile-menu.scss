@@ -18,24 +18,10 @@
 }
 
 
-@media screen and (min-width:767.98) {
-  .mobile-menu-btn {
-    display:none;
-  } 
-}
-// .mobile-overlay {
-  
-//   width: 100%;
-//   height: 100vh;
-//   background: #FFFFFF;
- 
-// }
-
-// .mobile-overlay {
-
-//   @media screen and (min-width: 767.98px) {
-//     display: none;
-//   }
+// @media screen and (min-width:767.98) {
+//   .mobile-menu-btn {
+//     display:none;
+//   } 
 // }
 
 .mobile-menu {
@@ -54,11 +40,11 @@
 
 .mobile-menu .menu-nav__link {
   font-weight: 500;
-font-size: 40px;
-line-height: 47px;
-letter-spacing: 0.02em;
-color: #212121;
-margin-bottom: 30px;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  margin-bottom: 30px;
 }
 
 .mobile-menu .menu-nav__link.active {

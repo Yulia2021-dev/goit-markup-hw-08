@@ -1,7 +1,13 @@
 
+.navigation {
+  padding: 16px 0;
+}
+
 .main-navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  
 }
 
 .menu-nav {
@@ -9,9 +15,7 @@
   display: inline-flex;
   justify-content: space-between;
 
-  
 }
-
 
 .menu-nav__link {
   position: relative;
