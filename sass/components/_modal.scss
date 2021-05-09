@@ -8,7 +8,13 @@
 }
 
 .modal {
-  @include modal-frame(absolute, 50%, 50%, 528px, 581px);
+  min-width: 320px;
+  max-width: 530px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 30px);
+  height: 100%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
   background-color:var(--main-bg-color);

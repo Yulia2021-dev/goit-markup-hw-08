@@ -13,7 +13,7 @@
 }
 
 .mobile-menu {
-  display: none;
+  display: block;
 }
 
 @media only screen and (max-width: 768px) {
@@ -49,6 +49,10 @@
       display: block;
       width: 25px;
       cursor: pointer;
+
+      &:hover > .bar {
+        background-color: var(--accent-color);
+      }
   }
 
   nav {

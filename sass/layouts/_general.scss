@@ -20,7 +20,19 @@
 
 .site-nav {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and(min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  // @media screen and(min-width: 1200px) {
+  //   flex-wrap: nowrap;
+  //   justify-content: center;
+  // }
+
+ 
 
   .button {
     display: block;

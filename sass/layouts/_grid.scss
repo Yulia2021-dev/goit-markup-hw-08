@@ -1,12 +1,20 @@
 .grid {
   display: flex;
-  flex-wrap: wrap;
-  // justify-content: space-between;
-  width: calc((100% - 90px) / 3);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // width: calc((100% - 90px) / 3);
 
-  // @media screen and (max-width: 767.98px) {
-  //   width:calc((50% - 60px / 2));
-  // }
+  @media screen and(min-width:480px) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 
 
@@ -14,21 +22,29 @@
   text-decoration: none;
 }
 
-// .grid__item {
-//   display: flex;  
-//   flex-wrap: wrap;
-//   width: calc((100% - 90px) / 3);
+.grid__item {
+  width: 100%;
+  max-width: 370px;
 
-//   @media screen and (max-width: 767.98px) {
-//     width:calc((50% - 60px / 2));
-//   }
-// }
+  @media screen and(min-width:480px) {
+    width: calc(50% - 15px);
+  }
+
+  @media screen and(min-width: 768px) {
+    width: calc(50% - 15px);
+    margin: 0 15px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: calc((100% - 90px) / 3);
+  }
+}
 
 .grid__item:nth-child(3n) {
   margin-right: 0;
 }
 
 .grid__item:hover .card-overlay-text {
-  transform: translateY(0);
+  transform: translate(-50%, -50%);
   transition: var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
 }

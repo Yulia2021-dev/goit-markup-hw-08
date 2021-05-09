@@ -19,8 +19,8 @@
   <body>
     <!-- Шапка -->
      <header class="navigation">
-      <div class="container main-nav">
-        <nav>
+      <div class="container">
+        <nav class="main-nav">
           <a class="link logo" href="index.html">
             <span class="logo__highlight">Web</span>Studio
           </a>
@@ -32,8 +32,7 @@
             </li>
             <li class="menu-nav__item"><a class="link menu-nav__link" href="#">Контакты</a></li>
           </ul>
-          <!-- <button class="menu-open">0</button> -->
-          <!-- <div class="contacts">
+          <div class="contacts">
             <ul class="list">
               <li class="contacts__item">
                 <a class="link contacts__link" href="mailto:info@devstudio.com">
@@ -52,72 +51,49 @@
                 </a>
               </li>
             </ul>
-          </div> -->
-          <!-- <div class="hamburger">
+          </div>
+          <div id="btn-open" class="hamburger" data-menu-button>
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </div> -->
+        </div>
         </nav> 
       </div>
-      <!-- <div class="menu">
-        <ul class=" menu__list list">
-          <li><a class="menu__link" href="">Студия</a></li>
-          <li><a class="menu__link" href="">Портфолио</a></li>
-          <li><a class="menu__link" href="">Контакты</a></li>
-        </ul>
-        <div class="menu-bottom">
-          <ul class="menu-contacts">
-            <li><a class="" href="">+38 096 111 11 11</a></li>
-            <li><a class="" href="">info@devstudio.com</a></li>
-          </ul>
-          <ul class="menu-networks">
-            <li><a class="" href="">Instagram</a></li>
-            <li><a class="" href="">Twitter</a></li>
-            <li><a class="" href="">Facebook</a></li>
-            <li><a class="" href="">LinkedIn</a></li>
-          </ul>
+       <div class="menu" data-menu>
+        <div id="btn-close" class="hamburger toggle close__icon" data-menu-button>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        
-      </div> -->
-    </header> 
-    <!-- <div class="mobile-menu" data-menu>
-      <ul class=" list">
-        <li class="menu-nav__item">
-          <a class="link menu-nav__link active" href="index.html">Студия</a></li>
-        <li class="menu-nav__item">
-          <a class="link menu-nav__link" href="portfolio.html">Портфолио</a>
-        </li>
-        <li class="menu-nav__item"><a class="link menu-nav__link" href="#">Контакты</a></li>
-      </ul>
-      <div class="contacts">
-        <ul class="list">
-          <li class="contacts__item">
-            <a class="link contacts__link" href="mailto:info@devstudio.com">
-              <svg class="icon" width="16" height="12">
-                <use href="./images/icons/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a class="link contacts__link" href="tel:+380961111111">
-              <svg class="icon phone" width="10" height="16">
-                <use href="./images/icons/sprite.svg#icon-telephone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
+        <ul class="menu__list list">
+          <li class="menu-nav__item"><a class="menu-nav__link active" href="index.html">Студия</a></li>
+          <li class="menu-nav__item"><a class="menu-nav__link" href="portfolio.html">Портфолио</a></li>
+          <li class="menu-nav__item"><a class="menu-nav__link" href="#">Контакты</a></li>
         </ul>
-      </div>
-    </div> -->
-  <!-- </div>
+        <div class="contacts">
+          <ul class="list">
+            <li class="contacts__item"><a class="link contacts__link tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="contacts__item"><a class="link contacts__link email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          </ul>
+          
+        </div>
+        <ul class="list social-networks">
+          <li><a class="" href="">Instagram</a></li>
+          <li><a class="" href="">Twitter</a></li>
+          <li><a class="" href="">Facebook</a></li>
+          <li><a class="" href="">LinkedIn</a></li>
+        </ul>
+        
+      </div> 
+    </header> 
     <!-- Main -->
     <main>
       <section class="banner">
         <div class="hero">
-          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button" data-modal-open>Заказать услугу</button>
+          <div class="hero-wrapper">
+            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+            <button type="button" class="button" data-modal-open>Заказать услугу</button>
+          </div>
         </div>
       </section>
       <!-- Features -->
@@ -178,7 +154,7 @@
        <section class="works">
         <div class="container">
           <h2 class="section-heading">Чем мы занимаемся</h2>
-          <ul class="list flex-container">
+          <ul class="list works__list">
             <li class="works__item">
               <div class="works__way">
               <img src="./images/features1.jpg" alt="Проектирование"/>

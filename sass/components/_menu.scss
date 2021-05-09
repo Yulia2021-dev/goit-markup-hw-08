@@ -15,6 +15,14 @@
   display: inline-flex;
   justify-content: space-between;
 
+  // @media screen and (min-width: 1200px) {
+  //   justify-content: flex-start;
+  // }
+
+}
+
+.menu-nav.list {
+  justify-content: space-between;
 }
 
 .menu-nav__link {

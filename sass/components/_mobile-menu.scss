@@ -26,7 +26,7 @@
 
 .mobile-menu {
   position: absolute;
-  top: 70px;
+  top: 0;
   right: 0;
   width: 100%;
   padding: 8px 40px 16px;
@@ -53,4 +53,5 @@
 
 .mobile-menu .contacts {
   margin-left: 0;
+  display: block;
 }

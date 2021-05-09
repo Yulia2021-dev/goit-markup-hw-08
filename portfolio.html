@@ -15,19 +15,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header class="navigation h-line">
+    <header class="navigation">
       <div class="container">
-        <nav>
+        <nav class="main-nav h-line">
           <a class="link logo" href="index.html">
             <span class="logo__highlight">Web</span>Studio
           </a>
-          <ul class="menu-nav list" id="base-nav">
-            <li class="menu-nav__item"><a class="link menu-nav__link" href="index.html">Студия</a></li>
+          <ul class="menu-nav list">
             <li class="menu-nav__item">
-              <a class="link menu-nav__link active" href="portfolio.html">Портфолио</a>
+              <a class="link menu-nav__link active" href="index.html">Студия</a></li>
+            <li class="menu-nav__item">
+              <a class="link menu-nav__link" href="portfolio.html">Портфолио</a>
             </li>
             <li class="menu-nav__item"><a class="link menu-nav__link" href="#">Контакты</a></li>
           </ul>
@@ -51,9 +52,40 @@
               </li>
             </ul>
           </div>
-        </nav>
+          <div id="btn-open" class="hamburger" data-menu-button>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        </nav> 
       </div>
-    </header>
+       <div class="menu" data-menu>
+        <div id="btn-close" class="hamburger toggle close__icon" data-menu-button>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="menu__list list">
+          <li class="menu-nav__item"><a class="menu-nav__link active" href="index.html">Студия</a></li>
+          <li class="menu-nav__item"><a class="menu-nav__link" href="portfolio.html">Портфолио</a></li>
+          <li class="menu-nav__item"><a class="menu-nav__link" href="#">Контакты</a></li>
+        </ul>
+        <div class="contacts">
+          <ul class="list">
+            <li class="contacts__item"><a class="link contacts__link tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="contacts__item"><a class="link contacts__link email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          </ul>
+          
+        </div>
+        <ul class="list social-networks">
+          <li><a class="" href="">Instagram</a></li>
+          <li><a class="" href="">Twitter</a></li>
+          <li><a class="" href="">Facebook</a></li>
+          <li><a class="" href="">LinkedIn</a></li>
+        </ul>
+        
+      </div> 
+    </header> 
     <main>
       <section class="main-section">
       <div class="container">
@@ -237,8 +269,9 @@
     </main>
     <!-- Подвал -->
     <footer class="footer">
-      <div class="container flex-container flex-c">
-          <!-- Block 1 -->
+       
+      <div class="container">
+        <div class="footer__blocks">
           <div class="contacts__logo">
             <a class="link logo" href="index.html">
               <span class="logo__highlight">Web</span>Studio
@@ -257,7 +290,6 @@
               </ul>
             </address>
           </div>
-          <!-- Block 2 -->
           <div class="join-social-links">
             <h3 class="subscription__text">Присоединяйтесь</h3>
             <ul class="list flex-container social-icons">
@@ -311,8 +343,7 @@
               </li>
             </ul>
           </div>
-          <!-- Block 3 -->
-          <div class="subscription">
+            <div class="subscription">
             <h3 class="subscription__text">Подпишитесь на рассылку</h3>
             <form class="subscription__form">
             <input class="subscription__input" type="text" name="email" placeholder="E-mail">
@@ -323,8 +354,10 @@
             </svg>
           </div>
             </form>
-          </div>
+          </div> 
+        </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

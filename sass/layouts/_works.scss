@@ -9,6 +9,11 @@
   position: relative;
 }
 
+.works__list {
+  display: flex;
+
+}
+
 .works__item {
 
   &:not(:last-child){

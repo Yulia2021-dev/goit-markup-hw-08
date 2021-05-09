@@ -10,6 +10,8 @@
   display: inline-flex;
   border-radius: var(--small-circled);
   transition: var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 15px;
+ 
 }
 .filter-btn:active {
   outline: none;

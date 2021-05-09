@@ -1,8 +1,9 @@
 .business-card {
-  max-width: 370px;
   margin-bottom: 30px;
   border: 1px solid #eee;
   @include smooth-transition;
+  height: 440px;
+ 
 }
 
 .card-overlay {
