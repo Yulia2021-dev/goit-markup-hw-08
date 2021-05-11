@@ -1,8 +1,10 @@
 
 
 .features, .works, .our-team, .regular-customers {
-  padding: 95px 0;
-}
+  @media screen and(min-width: 1200px) {
+    padding: 95px 0;
+  }
+ }
 
 .works {
   padding-top: 0;
@@ -10,8 +12,13 @@
 
 
 .main-section {
-  padding-top: 95px;
-  padding-bottom: 90px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+ 
+  @media screen and(min-width: 1200px) {
+    padding-top: 95px;
+    padding-bottom: 90px;
+  }
 }
 
 .secondary-nav {
