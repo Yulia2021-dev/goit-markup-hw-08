@@ -1,8 +1,6 @@
 .business-card {
-  margin-bottom: 30px;
-  border: 1px solid #eee;
   @include smooth-transition;
-  height: 440px;
+  // max-height: 404px;
  
 }
 
@@ -12,7 +10,7 @@
 }
 
 .card-overlay-text {
-  @include modal-frame(absolute, 50%, 50%, 100%, 100%);
+  @include modal-frame(absolute, 50%, 50% , 100%, 100%);
   padding: 65px 25px;
   color: var(--main-bg-color);
   font-size: 18px;
@@ -22,6 +20,22 @@
   @include smooth-transition;
   z-index: 0;
 }
+
+// .card-overlay-text {
+//   position: absolute;
+//   padding: 65px 25px;
+//   color: var(--main-bg-color);
+//   font-size: 18px;
+//   line-height: 1.55;
+//   top: 0;
+//   left: 0;
+//   background-color: rgba(33, 150, 243, 0.9);
+//   width: 100%;
+//   height: 100%;
+//   transform: translateY(100%);
+//   transition: var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+//   z-index: 0;
+// }
 
 .card-info {
   padding: 20px 24px;
@@ -47,4 +61,12 @@
 
 .business-card:hover, .business-card:focus {
   box-shadow: $dark-box-shadow;
+}
+
+.portfolio {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: .06em;
+  color: var(--main-text-color);
 }

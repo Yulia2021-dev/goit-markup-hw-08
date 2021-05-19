@@ -41,12 +41,16 @@
   margin-bottom: 5px;
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 25px;
+    margin-bottom: -5px;
   }
 }
 
 .contacts__item {
   margin-bottom: 20px;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .menu-nav__link {

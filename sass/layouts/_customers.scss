@@ -11,10 +11,9 @@
 .customer__list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: -30px;
+  margin: 0 -15px -30px -15px;
 }
 
 .customer__link {
@@ -26,6 +25,7 @@
   justify-content: center;
   align-items: center;
   transition: var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .customer__link:hover .icon, .customer__link:focus .icon {
@@ -44,15 +44,17 @@
 
 .customer__item {
    display: inline-flex;
-   flex-basis: 48%;
+   flex-basis: 30%;
+   margin: 15px;
    margin-bottom: 30px;
+   max-width: 226px;
+   flex-basis: calc(50% - 30px);
    
-   @media screen and (min-width: 768px) {
-     flex-basis: 30%;
-     max-width: 350px;
+   @media screen and (min-width: $medium-screen) {
+     flex-basis: calc(100% / 3 - 30px);
    }
 
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: $large-screen) {
     flex-basis:  calc(100% / 6 - 30px);
   }
 }

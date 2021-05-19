@@ -14,18 +14,24 @@
 .contacts {
   display: none;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     display: block;
+    padding: 10px 0;
   }
 
   @media screen and (min-width: 1200px) {
     margin-left: 275px;
+    padding: 30px 0;
   }
 }
 
 .contacts__link {
   font-size: 14px;
   color: var(--secondary-color);
+// @media screen and(min-width: ){
+  
+// }
+
 
   .icon {
     fill: var(--secondary-color);
@@ -52,7 +58,6 @@
   @media screen and (min-width: 1200px) {
     display: inline;  
   }
-  
 }
 
 .contacts__item:not(:last-child) {
@@ -64,7 +69,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-right: 30px;  
+    margin-right: 30px; 
+
   }
   
 }
