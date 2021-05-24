@@ -739,7 +739,7 @@ address {
   display: block;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.98px) {
   .menu-nav {
     position: fixed;
     left: -100%;
@@ -1007,6 +1007,8 @@ address {
 
 @media screen and (min-width: 768px) {
   .features__list {
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: horizontal;
@@ -1641,6 +1643,8 @@ address {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (min-width: 480px) {
@@ -1649,11 +1653,6 @@ address {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 
@@ -1662,6 +1661,14 @@ address {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    width: 100%;
   }
 }
 
@@ -1674,6 +1681,13 @@ address {
   max-width: 450px;
   margin-bottom: 30px;
   border: 1px solid #eee;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grid__item:hover, .grid__item:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 @media screen and (min-width: 768px) {
@@ -1691,13 +1705,8 @@ address {
 }
 
 .grid__item:hover .card-overlay-text {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.business-card {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1709,8 +1718,8 @@ address {
 
 .card-overlay-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1718,7 +1727,7 @@ address {
   padding: 65px 25px;
   color: var(--main-bg-color);
   font-size: 18px;
-  line-height: 1.55;
+  line-height: 1.5;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -1731,6 +1740,8 @@ address {
   padding: 20px 24px;
   overflow: hidden;
   z-index: 1;
+  line-height: 1.87;
+  letter-spacing: .03em;
 }
 
 .card-info__title {
@@ -1743,23 +1754,7 @@ address {
 }
 
 .card-info__text {
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: .03em;
   color: var(--secondary-color);
-}
-
-.business-card:hover, .business-card:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: .06em;
-  color: var(--main-text-color);
 }
 
 @media screen and (min-width: 1200px) {

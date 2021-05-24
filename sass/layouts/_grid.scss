@@ -3,17 +3,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  flex-wrap: wrap;
+
   // width: calc((100% - 90px) / 3);
 
-  @media screen and(min-width:480px) {
+  @media screen and(min-width: 480px) {
     flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    // justify-content: center;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $medium-screen) {
     justify-content: center;
+    width: 800px;
+    margin: 0 auto;
     // align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
   }
 }
 
@@ -27,17 +34,16 @@
   max-width: 450px;
   margin-bottom: 30px;
   border: 1px solid #eee;
+  @include smooth-transition;
 
-
-  // @media screen and(min-width:480px) {
-  //   width: calc(50% - 15px);
-  // }
+  &:hover, &:focus {
+    box-shadow: $dark-box-shadow;
+  }
 
   @media screen and(min-width: 768px) {
     width: calc(50% - 30px);
     max-width: 354px;
     margin: 15px;
-    // margin: 0 15px;
   }
 
   @media screen and(min-width: 1200px) {
@@ -46,6 +52,6 @@
 }
 
 .grid__item:hover .card-overlay-text {
-  transform: translate(-50%, -50%);
-  transition: var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  @include smooth-transition;
 }

@@ -16,6 +16,7 @@
   align-items: center;
 
   @media screen and (min-width:768px) {
+    flex-basis: calc(50% - 30px);
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;

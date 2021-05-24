@@ -9,20 +9,13 @@
 
 .main-navigation {
   display: flex;
-  align-items: center;
-  // justify-content: space-between;
-  
+  align-items: center;  
 }
 
 .menu-nav {
   width: 295px;
   display: inline-flex;
   justify-content: space-between;
-
-  // @media screen and (min-width: 1200px) {
-  //   justify-content: flex-start;
-  // }
-
 }
 
 .menu-nav.list {
@@ -44,6 +37,7 @@
   transition: opacity var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--accent-color);
 }
+
 .menu-nav__link:hover::after,  
 .menu-nav__link:focus::after{
   content: '';
@@ -56,6 +50,7 @@
   opacity: 1;
   background-color: var(--accent-color);
 }
+
 .menu-nav__item .link {
   font-size: 14px;
   list-style: none;
