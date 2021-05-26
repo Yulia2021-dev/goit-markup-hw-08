@@ -5,7 +5,10 @@
   font-weight: 700;
   line-height: 1.192;
   color: var(--main-text-color);
-  margin-right: 90px;
+ 
+  @media screen and(min-width: 1200px) {
+    margin-right: 90px;
+  }
 }
 
 .logo__highlight {

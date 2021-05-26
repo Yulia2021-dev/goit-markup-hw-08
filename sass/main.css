@@ -63,6 +63,7 @@ address {
 
 .h-line {
   border-bottom: 1px solid #eee;
+  /* transform: translateY(10px); */
 }
 
 .banner {
@@ -1054,7 +1055,7 @@ address {
 }
 
 .secondary-nav {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .site-nav {
