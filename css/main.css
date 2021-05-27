@@ -90,9 +90,21 @@ address {
   padding: 0 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -523,6 +535,7 @@ address {
 .modal {
   min-width: 320px;
   max-width: 450px;
+  max-height: 609px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1691,7 +1704,6 @@ address {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 800px;
     margin: 0 auto;
   }
 }
