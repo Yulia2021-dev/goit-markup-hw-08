@@ -522,8 +522,7 @@ address {
 
 .modal {
   min-width: 320px;
-  max-width: 530px;
-  max-height: 610px;
+  max-width: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -534,6 +533,13 @@ address {
   border-radius: 5px;
   background-color: var(--main-bg-color);
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 530px;
+    max-height: 610px;
+  }
 }
 
 .modal__title {
@@ -989,6 +995,7 @@ address {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
+    width: 100%;
   }
 }
 
@@ -1228,6 +1235,9 @@ address {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team__card:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -1239,10 +1249,15 @@ address {
 
 @media screen and (min-width: 768px) {
   .team__card {
+    width: calc(50% - 30px);
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     max-width: 350px;
     margin: 15px;
+    margin-bottom: 30px;
+  }
+  .team__card:nth-child(3n), .team__card:nth-child(4n) {
+    margin-bottom: 0;
   }
 }
 
@@ -1250,6 +1265,9 @@ address {
   .team__card {
     width: 270px;
     margin: auto;
+  }
+  .team__card:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
 
@@ -1786,7 +1804,7 @@ address {
 
 .main-section {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {

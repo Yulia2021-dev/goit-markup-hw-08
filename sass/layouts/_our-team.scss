@@ -47,31 +47,42 @@
   color: var( --main-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
-  // @media screen and (min-width:768px) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   margin-bottom: -30px;
-  // }
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   @media screen and(min-width:480px) {
     // width: calc(50% - 15px);
     max-width: 450px;
   }
 
    @media screen and(min-width: 768px) {
-    // flex-basis: calc(50% - 30px);
+    width: calc(50% - 30px);
     flex-wrap: wrap;
     max-width: 350px;
     margin: 15px;
+    margin-bottom: 30px;
+
+    &:nth-child(3n), &:nth-child(4n) {
+    margin-bottom: 0;
+    }
   }
   @media screen and(min-width: 1200px) {
     width: 270px;
     margin: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+
+    // &:nth-child(3n), &:nth-child(4n) {
+    //   margin-bottom: 30;
+    // }
   }
 
 }
-
 .team__body {
   background-color:var(--main-bg-color);
   padding: 30px;
